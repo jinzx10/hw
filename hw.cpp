@@ -1,7 +1,6 @@
 #include <iostream>
-#include <armadillo>
 
 int main() {
-    std::cout << "Hell World!"<< std::endl;
+    std::cout << "Hello World!"<< std::endl;
     return 0;
 }
