@@ -1,4 +1,7 @@
-Configs and Scripts
-=============================
-* .vimrc
-+ .hw.cpp
+Configs
+====================
+1. .vimrc
+2 good.cpp
+
+Scripts
+====================
