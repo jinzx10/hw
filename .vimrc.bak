@@ -1,0 +1,19 @@
+filetype plugin indent on
+syntax on
+
+set backspace=indent,eol,start
+set noexpandtab tabstop=4 softtabstop=4 shiftwidth=4
+
+set relativenumber number
+nnoremap <F2> :set rnu!<CR>
+nnoremap <F3> :set nu!<CR>
+
+set hlsearch
+hi Search ctermfg=white ctermbg=darkred
+
+set listchars=tab:█\ 
+nnoremap <F4> :set list!<CR>
+hi SpecialKey ctermfg=green
+
+"tpp->cpp
+autocmd BufEnter *.tpp :setlocal filetype=cpp
