@@ -4,7 +4,7 @@ syntax on
 set backspace=indent,eol,start
 set noexpandtab tabstop=4 softtabstop=4 shiftwidth=4
 
-set number relativenumber
+set ruler number relativenumber
 nnoremap <F2> :set rnu!<CR>
 nnoremap <F3> :set nu!<CR>
 
@@ -12,11 +12,10 @@ set hlsearch
 highlight Search ctermfg=white ctermbg=darkred
 
 if &diff
-	highlight DiffAdd ctermbg=darkgreen
-	highlight DiffDelete ctermbg=lightred
-	highlight DiffChange ctermbg=gray
-	highlight DiffText ctermbg=darkred
-	highlight Diff(Add,Delete,Change,Text) cterm=bold ctermfg=white
+	highlight DiffAdd		cterm=bold ctermfg=white ctermbg=darkgreen
+	highlight DiffDelete	cterm=bold ctermfg=white ctermbg=lightred
+	highlight DiffChange	cterm=bold ctermfg=white ctermbg=gray
+	highlight DiffText		cterm=bold ctermfg=white ctermbg=darkred
 endif
 
 set listchars=tab:▋\ 
