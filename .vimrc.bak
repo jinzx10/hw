@@ -4,16 +4,24 @@ syntax on
 set backspace=indent,eol,start
 set noexpandtab tabstop=4 softtabstop=4 shiftwidth=4
 
-set relativenumber number
+set number relativenumber
 nnoremap <F2> :set rnu!<CR>
 nnoremap <F3> :set nu!<CR>
 
 set hlsearch
-hi Search ctermfg=white ctermbg=darkred
+highlight Search ctermfg=white ctermbg=darkred
 
-set listchars=tab:█\ 
+if &diff
+	highlight DiffAdd ctermbg=darkgreen
+	highlight DiffDelete ctermbg=lightred
+	highlight DiffChange ctermbg=gray
+	highlight DiffText ctermbg=darkred
+	highlight Diff(Add,Delete,Change,Text) cterm=bold ctermfg=white
+endif
+
+set listchars=tab:▋\ 
 nnoremap <F4> :set list!<CR>
-hi SpecialKey ctermfg=green
+highlight SpecialKey ctermfg=darkgreen
 
 "tpp->cpp
 autocmd BufEnter *.tpp :setlocal filetype=cpp
