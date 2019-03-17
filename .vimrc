@@ -11,6 +11,9 @@ nnoremap <F3> :set nu!<CR>
 set hlsearch
 highlight Search ctermfg=white ctermbg=darkred
 
+nnoremap <F4> :set list! listchars=tab:▋\ <CR>
+highlight SpecialKey ctermfg=darkgreen
+
 if &diff
 	highlight DiffAdd		cterm=bold ctermfg=white ctermbg=darkgreen
 	highlight DiffDelete	cterm=bold ctermfg=white ctermbg=lightred
@@ -18,8 +21,4 @@ if &diff
 	highlight DiffText		cterm=bold ctermfg=white ctermbg=darkred
 endif
 
-nnoremap <F4> :set list! listchars=tab:▋\ <CR>
-highlight SpecialKey ctermfg=darkgreen
-
-"tpp->cpp
 autocmd BufEnter *.tpp :setlocal filetype=cpp
