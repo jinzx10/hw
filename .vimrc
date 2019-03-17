@@ -1,3 +1,25 @@
+"Vundle
+"see https://github.com/VundleVim/Vundle.vim
+set nocompatible
+filetype off
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+	Plugin 'VundleVim/Vundle.vim'
+	Plugin 'Valloric/YouCompleteMe'
+call vundle#end()
+
+"YouCompleteMe
+"see https://github.com/Valloric/YouCompleteMe
+"see https://valloric.github.io/YouCompleteMe/ 
+let g:ycm_global_ycm_extra_conf="$HOME/.vim/.ycm_extra_conf.py"
+let g:ycm_enable_diagnostic_signs=0
+let g:ycm_autoclose_preview_window_after_completion=1
+let g:ycm_autoclose_preview_window_after_insertion=1
+
+
+"Vim
+"see http://vimdoc.sourceforge.net/htmldoc/
 filetype plugin indent on
 syntax on
 
@@ -22,3 +44,5 @@ if &diff
 endif
 
 autocmd BufEnter *.tpp :setlocal filetype=cpp
+
+"set statusline=%{winnr()}\ \ %t\ %h%w%m%r\ %=%(%l,%c%V\ %=\ %P%)

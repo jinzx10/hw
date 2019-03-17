@@ -1,3 +1,4 @@
+# stolen from https://gist.github.com/dmatetelki/49ded0d74042e95d74d1
 # Partially stolen from https://bitbucket.org/mblum/libgp/src/2537ea7329ef/.ycm_extra_conf.py
 import os
 import ycm_core
