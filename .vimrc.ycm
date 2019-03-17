@@ -30,10 +30,7 @@ Plugin 'Valloric/YouCompleteMe'
 "
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
-filetype plugin indent on    " required
-" To ignore plugin indent changes, instead use:
-"filetype plugin on
-"
+
 " Brief help
 " :PluginList       - lists configured plugins
 " :PluginInstall    - installs plugins; append `!` to update or just
@@ -45,6 +42,7 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
+filetype plugin indent on    " required
 syntax on
 
 set backspace=indent,eol,start
@@ -71,21 +69,14 @@ highlight SpecialKey ctermfg=darkgreen
 "tpp->cpp
 autocmd BufEnter *.tpp :setlocal filetype=cpp
 
+
+
+"see http://vimdoc.sourceforge.net/htmldoc for details
 set statusline=%{winnr()}\ \ %t\ %h%w%m%r\ %=%(%l,%c%V\ %=\ %P%)
-
-
-" autocmd
-" see http://vimdoc.sourceforge.net/htmldoc/autocmd.html for details
-
-"identify .tpp file as .cpp
-autocmd BufEnter *.tpp :setlocal filetype=cpp
-
-
 
 " YouCompleteMe plugin
 " see https://valloric.github.io/YouCompleteMe/ for details
-
-let g:ycm_global_ycm_extra_conf = "$HOME/.vim/.ycm_extra_conf.py"
-let g:ycm_enable_diagnostic_signs = 0
-let g:ycm_autoclose_preview_window_after_completion = 1
-let g:ycm_autoclose_preview_window_after_insertion = 1
+let g:ycm_global_ycm_extra_conf="$HOME/.vim/.ycm_extra_conf.py"
+let g:ycm_enable_diagnostic_signs=0
+let g:ycm_autoclose_preview_window_after_completion=1
+let g:ycm_autoclose_preview_window_after_insertion=1

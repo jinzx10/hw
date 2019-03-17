@@ -18,8 +18,7 @@ if &diff
 	highlight DiffText		cterm=bold ctermfg=white ctermbg=darkred
 endif
 
-set listchars=tab:▋\ 
-nnoremap <F4> :set list!<CR>
+nnoremap <F4> :set list! listchars=tab:▋\ <CR>
 highlight SpecialKey ctermfg=darkgreen
 
 "tpp->cpp
