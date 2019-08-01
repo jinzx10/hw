@@ -20,6 +20,11 @@ C_BASE_FLAGS = [
         '-I/usr/include/'
         ]
 
+cpath = os.environ["CPATH"]
+cpath = ":" + cpath
+cpath = cpath.replace(":",":-isystem")
+cpath = cpath.split(":")
+
 CPP_BASE_FLAGS = [
         '-Wall',
         '-Wextra',
@@ -30,9 +35,9 @@ CPP_BASE_FLAGS = [
         '-DNDEBUG',
         '-std=c++1z',
         '-xc++',
-        '-I/usr/lib/',
-        '-I/usr/include/'
-        ]
+        '-I/opt/gcc/7.3/include/c++/7/x86_64-pc-linux-gnu',
+        '-I/opt/gcc/7.3/include/c++/7',
+        ] + cpath
 
 C_SOURCE_EXTENSIONS = [
         '.c'
