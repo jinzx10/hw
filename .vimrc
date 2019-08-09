@@ -33,6 +33,7 @@ nnoremap <F3> :set nu!<CR>
 set hlsearch
 highlight Search ctermfg=white ctermbg=darkred
 
+"set encoding=utf-8
 nnoremap <F4> :set list! listchars=tab:▋\ <CR>
 highlight SpecialKey ctermfg=darkgreen
 
@@ -45,4 +46,12 @@ endif
 
 autocmd BufEnter *.tpp :setlocal filetype=cpp
 
-"set statusline=%{winnr()}\ \ %t\ %h%w%m%r\ %=%(%l,%c%V\ %=\ %P%)
+"statusline
+set laststatus=2
+set statusline=%{winnr()}\ \ %t\ %h%w%m%r\ %=%(%l,%c%V\ %=\ %P%)
+
+"fortran
+let fortran_free_source=1
+let fortran_have_tabs=1
+let fortran_more_precise=1
+let fortran_do_enddo=1
