@@ -48,7 +48,7 @@ autocmd BufEnter *.tpp :setlocal filetype=cpp
 
 "statusline
 set laststatus=2
-set statusline=%{winnr()}\ \ %t\ %h%w%m%r\ %=%(%l,%c%V\ %=\ %P%)
+set statusline=%{winnr()}\ \ %t\ %h%w%m%r%=%l,%v\ \ %P
 
 "fortran
 let fortran_free_source=1
