@@ -29,8 +29,8 @@ flags = [
     '-std=c++14',
     '-x',
     'c++',
-    '-I',
-    '.',
+    '-I./include/',
+    '-I../include/'
 ]
 
 # Add system includes
