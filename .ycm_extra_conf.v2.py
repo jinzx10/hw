@@ -36,7 +36,7 @@ CPP_BASE_FLAGS = [
         '-std=c++1z',
         '-xc++',
         '-I./include/',
-        '-I../include/',
+        '-I../include/'
         ] + cpath
 
 C_SOURCE_EXTENSIONS = [
