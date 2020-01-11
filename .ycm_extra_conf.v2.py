@@ -35,8 +35,8 @@ CPP_BASE_FLAGS = [
         '-DNDEBUG',
         '-std=c++1z',
         '-xc++',
-        '-I/opt/gcc/7.3/include/c++/7/x86_64-pc-linux-gnu',
-        '-I/opt/gcc/7.3/include/c++/7',
+        '-I./include/',
+        '-I../include/',
         ] + cpath
 
 C_SOURCE_EXTENSIONS = [
