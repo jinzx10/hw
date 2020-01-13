@@ -44,6 +44,7 @@ C_SOURCE_EXTENSIONS = [
         ]
 
 CPP_SOURCE_EXTENSIONS = [
+        '.h',
         '.cpp',
         '.cxx',
         '.cc',
