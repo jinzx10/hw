@@ -44,7 +44,7 @@ if &diff
 	highlight DiffText		cterm=bold ctermfg=white ctermbg=darkred
 endif
 
-autocmd BufEnter *.tpp :setlocal filetype=cpp
+"autocmd BufEnter *.tpp :setlocal filetype=cpp
 
 "statusline
 set laststatus=2
