@@ -17,7 +17,6 @@ let g:ycm_enable_diagnostic_signs=0
 let g:ycm_autoclose_preview_window_after_completion=1
 let g:ycm_autoclose_preview_window_after_insertion=1
 
-
 "Vim
 "see http://vimdoc.sourceforge.net/htmldoc/
 filetype plugin indent on
@@ -49,6 +48,7 @@ autocmd BufEnter *.tpp :setlocal filetype=cpp
 "statusline
 set laststatus=2
 set statusline=%{winnr()}\ \ %t\ %h%w%m%r%=%l,%v\ \ %P
+set matchpairs+=<:>
 
 "fortran
 let fortran_free_source=1
